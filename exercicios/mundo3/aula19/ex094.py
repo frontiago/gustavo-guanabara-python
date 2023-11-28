@@ -8,4 +8,3 @@
 # C) Uma lista com todas as mulheres.
 # D) Uma lista com todas as pessoas com idade acima da média
 
-
