@@ -1,2 +1,2 @@
-def sayHello():
-    print('Olá mundo')
+# Tests
+
