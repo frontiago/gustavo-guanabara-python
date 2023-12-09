@@ -9,3 +9,11 @@
 # ---------
 # Olá Mundo
 # ---------
+
+def escreva(msg):
+    print('-' * len(msg))
+    print(f'{msg}')
+    print('-' * len(msg))
+
+
+escreva('MEU NOME É THIAGO FERREIRA DA SILVA')
