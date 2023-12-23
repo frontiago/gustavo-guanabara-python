@@ -5,4 +5,21 @@
 # o ano de nascimento de uma pessoa, retornando um valor literal indicando se uma pessoa
 # tem voto NEGADO, OPCIONAL ou OBRIGATÓRIO nas eleições.
 
+from datetime import date
 
+
+def voto(ano):
+    from datetime import date
+    atual = date.today().year
+    idade = atual - ano
+
+    if idade < 16:
+        return f'Você tem {idade} anos, você NÃO vota'
+    elif 16 <= idade < 18 or idade >= 65:
+        return f'Você tem {idade} anos, seu voto é OPCIONAL'
+    else:
+        return f'Você tem {idade} anos, o voto é OBRIGATÓRIO'
+
+
+nascimento = int(input('Seu ano de nascimento: '))
+print(voto(nascimento))
