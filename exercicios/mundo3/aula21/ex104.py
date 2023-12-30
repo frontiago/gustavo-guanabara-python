@@ -5,4 +5,21 @@
 # só que fazendo a validação para aceitar apenas um valor numérico.
 # Ex: n = leinaint('Digite um n')
 
+def leiaint(msg):
+    ok = False
+    valor = 0
+    while True:
+        num = str(input(msg))
+        if num.isnumeric():
+            valor = int(num)
+            ok = True
+        else:
+            print(" \033[0;31mERRO! Digite um número inteiro válido. \033[m")
+        if ok:
+            break
+    return valor
 
+
+n = leiaint("Digite um número: ")
+
+print(f"Você digitou o número {n}")
