@@ -19,7 +19,7 @@ c = ('\033[m',         # 0 - sem cores
 
 
 def ajuda(com):
-    titulo(f'Acessando o manuel do comando \'{com}\'', 4)
+    titulo(f'Acessando o manual do comando \'{com}\'', 4)
     print(c[6], end='')
     help(com)
     print(c[0], end='')

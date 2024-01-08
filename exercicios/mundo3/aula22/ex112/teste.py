@@ -5,3 +5,8 @@
 # Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(),
 # mas com uma validação de dados para aceitar apenas valores que sejam monetários.
 
+from utilidadescev import moeda
+from utilidadescev import dado
+
+preco = dado.leiadinheiro("Digite o preço: R$")
+moeda.resumo(preco, 20, 22)
