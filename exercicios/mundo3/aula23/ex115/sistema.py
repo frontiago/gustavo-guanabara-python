@@ -13,7 +13,11 @@ while True:
         # Opção de listar o conteúdo do arquivo
         lerArquivo(arquivo)
     elif resposta == 2:
-        cabecalho("Opção 2")
+        # Opção de cadastrar uma nova pessoa
+        cabecalho("NOVO CADASTRO")
+        nome = str(input('Nome: '))
+        idade = leiaint('Idade: ')
+        cadastrar(arquivo, nome, idade)
     elif resposta == 3:
         cabecalho("Saindo do sistema...até logo")
         break
